@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PokeAPI-Pokedex</title>
+
+        <link rel="stylesheet" href="pokedex.css">
+        <!--<script src="pokedex.js"></script>-->
+    </head>
+
+    <body>
+        <div class="content-box">
+            <!--Pokemon Info Display-->
+            <!--<div id="pokemon-info">-->
+                <div class="pokemon-search-bar">
+                    <label for="search">Search The Pokemon Pokedex</label>
+                    <input id="search" type="text" placeholder="Insert Pokemon Name Here" class="sBar"></input>
+                    <button id="searchTwo" class="button">🔎</button>
+                </div>
+                <!--poke-cards made at the bottom-->
+                <div class="screen__image">
+                    <div class="pokemon-front-img">
+                        <!-- made in js section -->
+                        <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" class="poke-front-image"/>
+                    </div>
+                </div>
+                <div class="poke-name">
+                    <span class="poke-id"></span><span class="poke-name"></span>
+                </div>
+                <div class="pokemon-types-one">
+                    <!--<span class="type-box grass">GRASS</span><span class="type-box poison">POISON</span>-->
+                    <span class = "poke-type-one"></span></div>
+                    <div class="pokemon-types-two">
+                    <span class = "poke-type-two"></span></div>
+                <div class="pokemon-description"></div>
+                <div class="screen__stats">
+                    <p class="stats__weight">
+                      Weight: <span class="poke-weight"></span>
+                    </p>
+                    <p class="stats__height">
+                      Height: <span class="poke-height"></span>
+                    </p>
+                  </div>
+            <!--</div>-->
+        </div>
+        <!-- Potentially a clickable box that adjusts with the screen size (so far manuelly done)-->
+        <div class="poke-cards">
+            <div class ="card">
+                <div class ="header">Sample Pkmn</div>
+                <span class="type-box normal">Normal</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Bulbasaur</div>
+                <span class="type-box grass">Grass</span><span class="type-box poison">Poison</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Heracross</div>
+                <span class="type-box bug">Bug</span><span class="type-box fighting">Fighting</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Lunatone</div>
+                <span class="type-box rock">Rock</span><span class="type-box psychic">Psychic</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Magnezone</div>
+                <span class="type-box electric">Electric</span><span class="type-box steel">Steel</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Vanillish</div>
+                <span class="type-box ice">Ice</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Yveltal</div>
+                <span class="type-box dark">Dark</span><span class="type-box flying">Flying</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Primarina</div>
+                <span class="type-box water">Water</span><span class="type-box fairy">Fairy</span>
+            </div>
+            <div class ="card">
+                <div class ="header">Dragapult</div>
+                <span class="type-box dragon">Dragon</span><span class="type-box ghost">Ghost</span>
+            </div>
+        </div>
+    </body>
+    <script src="pokedex.js" defer></script>
+</html>

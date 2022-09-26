@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-box {
+    width: 500px;
+    height: 500px;
+    border: 20px solid black;
+    border-radius: 25px;
+
+    
+    background-color: rgb(222, 29, 29);
+
+    /* display: flex; */
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.pokemon-search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: black;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.sBar {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.poke-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    text-align: center;
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    background-color:rgb(142, 253, 246);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.card > .header {
+    margin-bottom: .25rem;
+}
+
+/*
+.hide-cards {
+    display: none;
+}
+
+#pokemon-info {
+    width: 500;
+    height: 400;
+    background-color: rgb(138, 29, 222);
+    text-align: center;
+    overflow-y: auto;
+}
+
+.pokemon-name {
+    border: 1x solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+*/
+.poke-name {
+    border: 1x solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.poke-id {
+    border: 1x solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+.screen__image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokemon-front-img img {
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.pokemon-types-one {
+    margin-top: 10px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.pokemon-types-two {
+    margin-top: 10px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.type-box {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.poke-type-one {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.poke-type-two {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.screen__stats {
+    background: rgba(0,0,0,.3);
+    border-radius: 5px;
+    margin: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
+
+.hide {
+    display: none;
+}
+
+.normal {
+    background-color: grey;
+    color: white;
+}
+
+.fire {
+    background-color: rgb(241, 65, 34);
+    color: white;
+}
+
+.water {
+    background-color: rgb(37, 37, 239);
+    color: white;
+}
+
+.electric {
+    background-color: rgb(225, 225, 85);
+    color: white;
+}
+
+.grass {
+    background-color: rgb(9, 200, 9);
+    color: white;
+}
+
+.ice {
+    background-color: rgb(9, 234, 234);
+    color: white;
+}
+
+.fighting {
+    background-color: rgb(155, 44, 70);
+    color: white;
+}
+
+.poison {
+    background-color: rgb(130, 6, 101);
+    color: white;
+}
+
+.ground {
+    background-color: rgb(211, 211, 153);
+    color: white;
+}
+
+.flying {
+    background-color: rgb(123, 109, 203);
+    color: white;
+}
+
+.psychic {
+    background-color: rgb(240, 44, 136);
+    color: white;
+}
+
+.bug {
+    background-color: rgb(94, 167, 46);
+    color: white;
+}
+
+.rock {
+    background-color: rgb(151, 151, 110);
+    color: white;
+}
+
+.ghost {
+    background-color: rgb(112, 45, 110);
+    color: white;
+}
+
+.dragon {
+    background-color: rgb(93, 19, 150);
+    color: white;
+}
+
+.dark {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.steel {
+    background-color: rgb(171, 171, 171);
+    color: white;
+}
+
+.fairy {
+    background-color: rgb(236, 14, 217);
+    color: white;
+}
